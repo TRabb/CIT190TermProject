@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Obstacle Dodge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/memoryGame.css">
+    <body onload="startGame()">
+        <section>
+            <div>
+                <p>
+                    Help Shrek dodge the obstacles!
+                </p>
+            </div>
+            <div class="buttons">
+                <button type="button" onmousedown="moveup()" onmouseup="clearmove()">Up</button>
+                <button type="button" onmousedown="movedown()" onmouseup="clearmove()">Down</button>
+                <button type="button" onmousedown="moveleft()" onmouseup="clearmove()">Left</button>
+                <button type="button" onmousedown="moveright()" onmouseup="clearmove()">Right</button>
+            </div>
+        </section>
+        <script src="js/memoryGame.js"></script>
+    </body>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>The Game Emporium</title>
+    <link href="css/gameHome.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>The Game Emporium</h1>
+    <header>
+        <h2>Which game would you like to play?</h1>
+    </header>
+    <section>
+        <div>
+            <img class="gameImage" style="border: 10px outset #9D1300" hspace="145" src="media/shrekgame.png">
+            <img class="gameImage" style="border: 10px outset #9D1300" hspace="0" src="media/puzzleGame.png">
+            <img class="gameImage" style="border: 10px outset #9D1300" hspace="100" src="media/typingFrenzy.png">
+        </div>
+        <div>
+            <p class="clock" id="clock"></p>
+            <button class="inputButton" type="button" id="ObstacleDodge">Obstacle Dodge!</button>
+            <button class="inputButton" type="button" id="Puzzle">Puzzle Game!</button>
+            <button class="inputButton" type="button" id="Typing">Typing Frenzy!</button>
+        </div>
+        <div id=footer>
+            <footer>
+             &copy; Tanner Rabb 2019
+            </footer>  
+        </div>   
+
+    </section>
+    <script>
+        document.getElementById("Typing").addEventListener("click", function () {
+            window.open("https://lisabalbach.com/rabb2/CIT190/TermProject/typingGame.html");
+        });
+        document.getElementById("Puzzle").addEventListener("click", function () {
+            window.open("https://lisabalbach.com/rabb2/CIT190/TermProject/myDragandDrop.html");
+        });
+
+        document.getElementById("ObstacleDodge").addEventListener("click", function () {
+            window.open("https://lisabalbach.com/rabb2/CIT190/TermProject/memoryGame.html");
+        });
+
+
+
+    </script>
+</body>
+
+</html>

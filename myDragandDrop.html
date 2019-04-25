@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/DragAndDrop.css">
+   <title>Puzzle Game</title>
+</head>
+
+<div class="header">
+   <div id="title">Puzzle Game!</div>
+   <div id="description">Drag and drop the pieces of the puzzle to complete the picture.</div>
+   <div id="description2">You can put multiple pieces into the same area but only the last one will be accessible.</div>
+   <div id="description3">Please select a puzzle before starting!</div>
+</div>
+
+   <div id="images">
+      <div id="drag1" draggable="true" ondragstart="drag(event)"></div>
+      <div id="drag2" draggable="true" ondragstart="drag(event)"></div>
+      <div id="drag3" draggable="true" ondragstart="drag(event)"></div>
+      <div id="drag4" draggable="true" ondragstart="drag(event)"></div>
+      <div id="drag5" draggable="true" ondragstart="drag(event)"></div>
+      <div id="drag6" draggable="true" ondragstart="drag(event)"></div>
+      <div id="drag7" draggable="true" ondragstart="drag(event)"></div>
+      <div id="drag8" draggable="true" ondragstart="drag(event)"></div>
+      <div id="drag9" draggable="true" ondragstart="drag(event)"></div>
+   </div>
+
+   <div id="buttons">
+      <button onclick="sunsetPicture()">Sunset Puzzle</button>
+      <button onclick="forestPicture()">Forest Puzzle</button>
+      <button onclick="mountainPicture()">Mountain Range Puzzle</button>  
+   </div>
+
+   <div id="boxes">
+      <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="box3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="box4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="box5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="box6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="box7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="box8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="box9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   </div>
+
+
+   <script src="js/DragAndDrop.js"></script>
+</html>
